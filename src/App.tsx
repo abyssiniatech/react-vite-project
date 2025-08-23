@@ -1,23 +1,20 @@
 
-
- const App = () => {
-  const myName: string = "Surafel";   // text
-   const age: number = 25;             // numbers (int, float, etc.)
-   const isStudent: boolean = true;    // true / false
-   const nothing: null = null;         // null
-   const notAssigned: undefined = undefined; // undefined
-   const big: bigint = 100n;           // big integer
-   const uniqueId: symbol = Symbol("id"); // unique value
- 
+// array in typescript
+const App = () => {
+const   numbers: number[] = [1, 2, 3,4,5];
+const  names: Array<string> = ["surafel", "john","abel","yonatan"];
   return (
     <div>
-         <p>my name is {myName}</p>
-         <p>i am {age} years old</p>
-         <p>{isStudent ? "you are a student":"you are not a student"}</p>
-         <p>{nothing ? "nothing": "some output"}</p>
-         <p>{notAssigned ? "undefind": "defind"}</p>
-         <p>{big}</p>
-         <p>{uniqueId ? "unigue id": "invalid input"}</p>
+          <div>
+            {names.map((name)=>{
+                 return <p>{name}</p>
+            })}
+                <ul>
+                  {numbers.map((num)=>{
+                     return <li>{num}| {names.map((nm)=><p>{nm}</p>)} </li>
+                  })}
+                </ul>
+          </div>
     </div>
   )
 }
