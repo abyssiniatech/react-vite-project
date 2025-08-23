@@ -1,22 +1,15 @@
-
-// array in typescript
 const App = () => {
-const   numbers: number[] = [1, 2, 3,4,5];
-const  names: Array<string> = ["surafel", "john","abel","yonatan"];
+  // tuple type [string, number, boolean]
+  // A tuple in TypeScript is a special type of array with a fixed length and fixed types for each element.
+  const person: [string, number, boolean] = ["surafel", 23, true];
+
   return (
     <div>
-          <div>
-            {names.map((name)=>{
-                 return <p>{name}</p>
-            })}
-                <ul>
-                  {numbers.map((num)=>{
-                     return <li>{num}| {names.map((nm)=><p>{nm}</p>)} </li>
-                  })}
-                </ul>
-          </div>
+      <p>{person[0]}</p> {/* name */}
+      <p>{person[1]}</p> {/* age */}
+      <p>{person[2] ? "true" : "false"}</p> {/* boolean */}
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
