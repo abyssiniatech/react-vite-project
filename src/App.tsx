@@ -1,15 +1,23 @@
+// normal array in ts
+// In TypeScript, an array is a collection of values of the same type (or sometimes a union of types).
 const App = () => {
-  // tuple type [string, number, boolean]
-  // A tuple in TypeScript is a special type of array with a fixed length and fixed types for each element.
-  const person: [string, number, boolean] = ["surafel", 23, true];
+ 
+  // Method 1: Using []
+  const numbers: number[] = [1, 2, 3, 4];
 
+// Method 2: Using Array<type>
+const fruits: Array<string> = ["apple", "banana", "mango"];
   return (
     <div>
-      <p>{person[0]}</p> {/* name */}
-      <p>{person[1]}</p> {/* age */}
-      <p>{person[2] ? "true" : "false"}</p> {/* boolean */}
+          {/* two excute array in the dom we can use map(),foreach or other methods */}
+          {fruits.map((fr)=>{
+            return <p>{fr}</p>
+          })}
+          {numbers.map((num)=>{
+            return <p>{num}</p>
+          })}
     </div>
-  );
-};
+  )
+}
 
-export default App;
+export default App
