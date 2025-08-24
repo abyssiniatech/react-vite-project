@@ -1,15 +1,13 @@
 
-
 const App = () => {
-       function idSample(id:string | number){
-        return id;
-       }
-       const idvalue=idSample("sura20151")
-       const idvalues=idSample(12)
+  function printId(id:    string){
+  return  id.toUpperCase();
+
+}
+const nm = printId("hello") 
   return (
     <div>
-      <p>{idvalue}</p>
-      <p>{idvalues}</p>
+            <p>{nm}</p>
     </div>
   )
 }
