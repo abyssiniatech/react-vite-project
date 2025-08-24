@@ -1,12 +1,15 @@
 
+
 const App = () => {
-       function getFavoriteNumber(number:number){
-        return number *number
+       function idSample(id:string | number){
+        return id;
        }
-       const product =getFavoriteNumber(12)
+       const idvalue=idSample("sura20151")
+       const idvalues=idSample(12)
   return (
     <div>
-           <h1>{product}</h1>
+      <p>{idvalue}</p>
+      <p>{idvalues}</p>
     </div>
   )
 }
