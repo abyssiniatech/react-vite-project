@@ -1,13 +1,19 @@
 
-const App = () => {
-  function printId(id:    string){
-  return  id.toUpperCase();
 
-}
-const nm = printId("hello") 
+function App() {
+  const numbers:number[]=[1,2,3,4,5,6,];
+   const frainds=["able","nahom","Bruk","aster"]
+  
   return (
     <div>
-            <p>{nm}</p>
+      {numbers.map((num)=>{
+          return <p>{num}</p>
+      })}
+         {
+          frainds.map((fraind) =>{
+                return <p>{fraind}</p>
+          })
+         }
     </div>
   )
 }
