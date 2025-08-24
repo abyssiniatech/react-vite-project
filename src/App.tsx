@@ -1,25 +1,14 @@
-type AppProps = {
-  name: string;
-  age: number;
-  isAdmin: boolean;
-};
 
-const user: AppProps = {
-  name: "surafel",
-  age: 23,
-  isAdmin: false, // ✅ matches type
-};
-
-const App = ({ name, age, isAdmin }: AppProps) => {
+const App = () => {
+       function getFavoriteNumber(number:number){
+        return number *number
+       }
+       const product =getFavoriteNumber(12)
   return (
     <div>
-      <p>My name is {name}</p>
-      <p>I am {age} years old</p>
-      <p>{isAdmin ? "You are admin" : "You are not admin"}</p>
+           <h1>{product}</h1>
     </div>
-  );
-};
-
-export default function Root() {
-  return <App {...user} />; // ✅ passing props correctly
+  )
 }
+
+export default App
