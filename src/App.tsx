@@ -1,19 +1,16 @@
+   type user = {
+      name:string,
+      age:number,
+     }
+const App = () => {
+     function usermanagment(user:user){
+         return `user:${user.name} age: ${user.age}`
+     }
+     const value= usermanagment({name:"surafel",age:23})
 
-
-function App() {
-  const numbers:number[]=[1,2,3,4,5,6,];
-   const frainds=["able","nahom","Bruk","aster"]
-  
   return (
     <div>
-      {numbers.map((num)=>{
-          return <p>{num}</p>
-      })}
-         {
-          frainds.map((fraind) =>{
-                return <p>{fraind}</p>
-          })
-         }
+         {value}
     </div>
   )
 }
