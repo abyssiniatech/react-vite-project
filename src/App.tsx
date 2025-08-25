@@ -1,18 +1,24 @@
-   type user = {
-      name:string,
-      age:number,
-     }
-const App = () => {
-     function usermanagment(user:user){
-         return `user:${user.name} age: ${user.age}`
-     }
-     const value= usermanagment({name:"surafel",age:23})
+// An enum (short for enumeration) is a special TypeScript feature that lets you define a set of named constants (a group of related values with names).
+
+
+
+const Direction = {
+  Up: "Up",
+  Down: "Down",
+  Left: "Left",
+  Right: "Right",
+} as const;
+type Direction = (typeof Direction)[keyof typeof Direction];
+
+const App: React.FC = () => {``
+  const move: Direction = Direction.Up;
 
   return (
     <div>
-         {value}
+      <h1>Enum Example</h1>
+      <p>Current Move: {move}</p> {/* ✅ Directly prints "Up" */}
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
