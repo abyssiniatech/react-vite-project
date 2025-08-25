@@ -5,6 +5,11 @@ import App from './App.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <App />
+    <App
+     name ="surafel mengist"
+     age={26}
+     id={123}
+     isLogin={true}
+     />
   </StrictMode>,
 )
