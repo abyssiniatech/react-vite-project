@@ -10,7 +10,7 @@ const Direction = {
 } as const;
 type Direction = (typeof Direction)[keyof typeof Direction];
 
-const App: React.FC = () => {``
+const App: React.FC = () => {
   const move: Direction = Direction.Up;
 
   return (
