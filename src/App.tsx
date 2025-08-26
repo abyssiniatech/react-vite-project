@@ -1,12 +1,10 @@
-import PropsName from "./Components/Prop"
+import Usestate from "./Components/Usestate"
+
+
 const App = () => {
   return (
     <div>
-         <PropsName
-         firstName="surafel mengist "
-         lastName="Berehun"
-          />
-         
+       <Usestate />
     </div>
   )
 }
