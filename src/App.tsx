@@ -1,7 +1,8 @@
-import Array from "./Components/Array"
+import AdvanceObjectTypes from "./Components/AdvanceObjectTypes"
+
 const App = () => {
   return (
-         <Array />
+      <AdvanceObjectTypes />
   )
 }
 export default App
