@@ -1,10 +1,12 @@
-import UseReducer2 from "./Components/UseReducer2"
+import { ThemeProvider } from "./Components/Usecontext"
+
 const App = () => {
   return (
-    <div>
-        
-     <UseReducer2 />
-    </div>
+    <ThemeProvider>
+      <div>
+        {/* Your app content goes here */}
+      </div>
+    </ThemeProvider>
   )
 }
 export default App
