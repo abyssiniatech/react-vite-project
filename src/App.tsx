@@ -1,9 +1,7 @@
-import Object2 from "./Components/Object2"
-
-
+import Array from "./Components/Array"
 const App = () => {
   return (
-      <Object2 />
+         <Array />
   )
 }
 export default App
