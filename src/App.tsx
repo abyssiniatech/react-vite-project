@@ -1,9 +1,9 @@
-import UseReducer from "./Components/UseReducer"
+import UseReducer2 from "./Components/UseReducer2"
 const App = () => {
   return (
     <div>
         
-     <UseReducer />
+     <UseReducer2 />
     </div>
   )
 }
