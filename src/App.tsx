@@ -1,8 +1,9 @@
-import Object from "./Components/Object"
+import Object2 from "./Components/Object2"
+
 
 const App = () => {
   return (
-     <Object />
+      <Object2 />
   )
 }
 export default App
