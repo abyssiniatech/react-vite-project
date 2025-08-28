@@ -1,12 +1,8 @@
-import { ThemeProvider } from "./Components/Usecontext"
+import Object from "./Components/Object"
 
 const App = () => {
   return (
-    <ThemeProvider>
-      <div>
-        {/* Your app content goes here */}
-      </div>
-    </ThemeProvider>
+     <Object />
   )
 }
 export default App
