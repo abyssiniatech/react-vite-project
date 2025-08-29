@@ -1,8 +1,8 @@
+import Functions from "./Components/Functions"
 
-import Main from './Components/Class';
 const App = () => {
   return (
-    <Main />
+     <Functions a={20} b={10} />
   )
 }
 export default App
