@@ -1,8 +1,8 @@
-import AdvanceObjectTypes from "./Components/AdvanceObjectTypes"
 
+import Main from './Components/Class';
 const App = () => {
   return (
-      <AdvanceObjectTypes />
+    <Main />
   )
 }
 export default App
