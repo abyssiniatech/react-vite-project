@@ -1,8 +1,7 @@
-import Functions from "./Components/Functions"
-
+import InterfaceWrapper from "./Components/Interface"
 const App = () => {
   return (
-     <Functions a={20} b={10} />
+       <InterfaceWrapper />
   )
 }
 export default App
