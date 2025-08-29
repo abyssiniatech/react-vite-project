@@ -57,7 +57,7 @@ const AdvanceObjectTypes = () => {
   return (
     <div>
       <h2>Students List</h2>
-      <ul>
+      <ul className="bg-teal-400 text-white flex justify-center items-center align-center">
         {students.map((student, idx) => (
           <li key={idx}>
             {student.name} - Age: {student.age}, Grade: {student.grade}, Year: {student.year}, Completed: {student.isCompleted ? "Yes" : "No"}
