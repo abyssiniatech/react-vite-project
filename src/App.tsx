@@ -1,7 +1,8 @@
-import InterfaceWrapper from "./Components/Interface"
+import Lab from "./Components/Lab"
+
 const App = () => {
   return (
-       <InterfaceWrapper />
+       <Lab />  
   )
 }
 export default App
