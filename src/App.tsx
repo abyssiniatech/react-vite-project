@@ -1,8 +1,8 @@
-import Lab from "./Components/Lab"
-
 const App = () => {
   return (
-       <Lab />  
+    <div>
+    </div>
   )
 }
+
 export default App
