@@ -1,8 +1,10 @@
-import As from "./Components/TypeCastingWithAs"
+import Class1 from "./Components/Class1"
+
+
 const App = () => {
   return (
     <div>
-       <As />
+       <Class1 />
     </div>
   )
 }
