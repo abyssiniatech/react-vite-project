@@ -1,8 +1,8 @@
-import Status from "./Components/Status"
+import Union from "./Components/Union"
 const App = () => {
   return (
     <div>
-      <Status />
+        <Union />
     </div>
   )
 }
