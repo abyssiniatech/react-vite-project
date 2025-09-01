@@ -1,8 +1,8 @@
-import ErrorComponent from "./Components/Error"
+import Enum from "./Components/Enum"
 const App = () => {
   return (
     <div>
-      <ErrorComponent />
+      <Enum />
     </div>
   )
 }
