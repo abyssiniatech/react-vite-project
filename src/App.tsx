@@ -1,9 +1,8 @@
-import TypeAliases from "./Components/TypeAliases"
-
+import Status from "./Components/Status"
 const App = () => {
   return (
     <div>
-        <TypeAliases />
+      <Status />
     </div>
   )
 }
