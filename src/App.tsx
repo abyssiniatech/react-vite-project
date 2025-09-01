@@ -1,10 +1,17 @@
-import Class1 from "./Components/Class1"
 
+import Props from "./Components/React/props"
+import Usestate from "./Components/Usestate"
 
 const App = () => {
   return (
     <div>
-       <Class1 />
+      <Props 
+      name="surafel"
+      age={25}
+      major="computer science"
+      
+      />
+      <Usestate />
     </div>
   )
 }
