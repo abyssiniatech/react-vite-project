@@ -1,8 +1,9 @@
-import Enum from "./Components/Enum"
+import TypeAliases from "./Components/TypeAliases"
+
 const App = () => {
   return (
     <div>
-      <Enum />
+        <TypeAliases />
     </div>
   )
 }
