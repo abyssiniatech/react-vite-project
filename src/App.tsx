@@ -1,8 +1,8 @@
-import Union from "./Components/Union"
+import As from "./Components/TypeCastingWithAs"
 const App = () => {
   return (
     <div>
-        <Union />
+       <As />
     </div>
   )
 }
