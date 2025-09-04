@@ -1,29 +1,17 @@
-import Card from "./Components/React/Childeren"
-import Parent from "./Components/React/Parent"
-import Son from "./Components/React/Son"
+import { useState } from "react"
+import Child1 from "./Components/React/ChildComponents"
+
 const App = () => {
+  const [count,setCount] = useState<number>(0)
   return (
-    <div className="flex justify-between items-center gap-2 bg-teal-100">
-      <Card title="Card Title" style={{ border: "1px solid black", textAlign:"center", color:"blue", padding: "16px", borderRadius: "8px" }}>
-        <p>This is the card content.</p>
-        <button className="bg-green-700 text-white px-4 py-2 rounded">Click Me</button>
-      </Card>
-      
-           
-            <Son title={"card-title"} style={{border:"1px solid black", textAlign:"center", color:"red"}}>
+    <div>
+        <Child1 title="Counter App" style={{border:"2px solid red",margin:"auto",maxHeight:"100vh", width:"500px", backgroundColor:"black",color:"white",padding:"10px", textAlign:"center"}} className={"hello"} count={count} setCount={setCount}>
+                      <p>the value count is = {count}</p>
 
-              <p>these is the best prpgramming to the new generatioom with </p>
-              <button className="bg-blue-700 text-white rounded px-4 py-2  mt-3">Add me</button>
-            </Son>
-
-
-            <hr />
-
-            <Parent className="text-center" title={"Parent title"} style={{backgroundColor:"teal", border:"1px solid red", color:"white" ,textAlign:"center"}}>
-                
-                    <h1>Hello these is the child components </h1>
-                    <button className="bg-pink-700 rounded text-center py-2 px-4 text-white">Submit</button>
-              </Parent>
+                 <button className="bg-teal-700 text-white rounded px-4 py-2 text-center text-2xl  m-2" onClick={()=>setCount(prev =>prev-1)}>Decrement</button>
+                <button className="bg-blue-700 text-white rounded px-4 py-2 text-center text-2xl  m-2" onClick={()=>setCount(0)}>Reset</button>
+                <button className="bg-pink-700 text-white rounded px-4 py-2 text-center text-2xl  m-2" onClick={()=>setCount(prev=>prev+1)}>Increment</button>
+          </Child1>
     </div>
   )
 }
