@@ -1,12 +1,9 @@
-
-
-import Todo from "./Components/React/Todo"
+import Counter from "./Components/React/Counter"
 
 const App =() =>{
-
   return(
   <div>
-      <Todo />
+    <Counter />
   </div>
   )
 }
