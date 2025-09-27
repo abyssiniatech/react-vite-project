@@ -1,9 +1,10 @@
-import Counter from "./Components/React/Counter"
-
+import {useState} from "react"
+import Increment from "./Components/React/Increment";
 const App =() =>{
+  const[count,setCount]= useState<number>(0)
   return(
   <div>
-    <Counter />
+    <Increment count={count} setCount={setCount} />
   </div>
   )
 }
