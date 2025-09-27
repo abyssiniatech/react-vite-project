@@ -1,10 +1,9 @@
-import {useState} from "react"
-import Increment from "./Components/React/Increment";
+import Events from "./Components/React/Events"
 const App =() =>{
-  const[count,setCount]= useState<number>(0)
+
   return(
   <div>
-    <Increment count={count} setCount={setCount} />
+    <Events/>
   </div>
   )
 }
