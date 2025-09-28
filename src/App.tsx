@@ -1,9 +1,10 @@
-import Events from "./Components/React/Events"
+import Lab1 from "./Components/React/Lab1"
+
 const App =() =>{
 
   return(
   <div>
-    <Events/>
+  <Lab1 student={student}/>
   </div>
   )
 }
