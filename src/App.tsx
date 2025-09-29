@@ -4,8 +4,8 @@ const App =() =>{
 
   return(
   <div>
-       
-   <Prop1 />
+
+   <Prop1  name="Surafel Mengist" age={30} isRegistered={false}/>
   </div>
   )
 }
