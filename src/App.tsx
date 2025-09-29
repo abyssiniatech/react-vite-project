@@ -1,10 +1,11 @@
-import Lab1 from "./Components/React/Lab1"
+import Prop1 from "./Components/Prop1"
 
 const App =() =>{
 
   return(
   <div>
-  <Lab1 student={student}/>
+       
+   <Prop1 />
   </div>
   )
 }
