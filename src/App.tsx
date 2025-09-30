@@ -1,11 +1,11 @@
-import Prop1 from "./Components/Prop1"
 
+import Usereducer from "./Components/React/Hooks/Usereducer"
 const App =() =>{
 
   return(
-  <div>
+  <div className="bg-slate-200 min-h-screen flex flex-col items-center justify-center">
 
-   <Prop1  name="Surafel Mengist" age={30} isRegistered={false}/>
+ <Usereducer />
   </div>
   )
 }
