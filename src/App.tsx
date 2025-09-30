@@ -1,12 +1,16 @@
+import { Route,Routes } from "react-router-dom"
+import Home from './Components/Home/Home';
+import About from "./Components/About/About";
 
-import Usereducer from "./Components/React/Hooks/Usereducer"
-const App =() =>{
-
-  return(
-  <div className="bg-slate-200 min-h-screen flex flex-col items-center justify-center">
-
- <Usereducer />
-  </div>
+const App = () => {
+  return (
+    <div>
+      <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            {/* <Route path="/lab1" element={<Lab1 />} /> */}
+      </Routes>
+    </div>
   )
 }
 
