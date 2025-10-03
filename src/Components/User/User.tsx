@@ -1,13 +1,11 @@
-const User =()=>{
-     return(
-     <div className="bg-gray-100 min-h-screen flex flex-col items-center justify-center">
-          <div className="bg-gray-100 border-1">
-          <h1 className="text-2xl font-bold text-center p-0.5 rounded">User Page</h1>
-          <form className="bg-white p-6 rounded shadow-md w-full max-w-sm">
-               <input className="border border-gray-300 p-2 rounded w-full" type="text" placeholder="Enter your name" />
-               <button className="bg-blue-500 text-white p-2 rounded mt-4 min-w-full" type="submit">Submit</button>
-          </form>
-             </div>
-     </div>)
+
+
+const User = () => {
+  return (
+    <div>
+           hello
+    </div>
+  )
 }
+
 export default User

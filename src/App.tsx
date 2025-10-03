@@ -1,22 +1,19 @@
-import { Route,Routes } from "react-router-dom"
-import Home from './Components/Home/Home';
-import About from "./Components/About/About";
-import  Navbar  from "./Components/Navbar";
-import User from "./Components/User/User";
-import Contact from "./Components/Contact/Contact";
-import Main from "./Components/Class";
+import { Route, Routes } from "react-router-dom"
+import Navbar from "./Components/Navbar"
+
 const App = () => {
   return (
-    <div> 
-    
-            <Navbar />
+    <div>
+      <Navbar activeStyle={(isActive) => ({
+        fontWeight: isActive ? 'bold' : 'normal',
+        color: isActive ? 'blue' : 'black',
+      })} />
       <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/user" element={<User />}></Route>
+           <Route path="/" element={<h1>Home Page</h1>} />
+           <Route path="/user" element={<h1>User Page</h1>} />
+           <Route path="/about" element={<h1>About Page</h1>} />
+           <Route path="/contact" element={<h1>Contact Page</h1>} />
       </Routes>
-      <Main />
     </div>
   )
 }
