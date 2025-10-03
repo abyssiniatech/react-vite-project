@@ -11,6 +11,7 @@ const Navbar =({ activeStyle }: NavbarProps) => {
                 <li><NavLink to="/user" style={({ isActive }) => activeStyle(isActive)}>User</NavLink></li>
                 <li><NavLink to="/about" style={({ isActive }) => activeStyle(isActive)}>About</NavLink></li>
                 <li><NavLink to='/contact' style={({ isActive }) => activeStyle(isActive)}>Contact</NavLink></li>
+                <li><NavLink to='/order' style={({ isActive }) => activeStyle(isActive)}>Order</NavLink> </li>
          </ul>
      </nav>
      )

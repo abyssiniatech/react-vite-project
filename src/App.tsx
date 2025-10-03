@@ -1,6 +1,10 @@
 import { Route, Routes } from "react-router-dom"
 import Navbar from "./Components/Navbar"
-
+import User from "./Components/User/User"
+import Home from "./Components/Home/Home"
+import About from "./Components/About/About"
+import Contact from "./Components/Contact/Contact"
+import Order from "./Components/Order/OrderSummary"
 const App = () => {
   return (
     <div>
@@ -9,10 +13,11 @@ const App = () => {
         color: isActive ? 'blue' : 'black',
       })} />
       <Routes>
-           <Route path="/" element={<h1>Home Page</h1>} />
-           <Route path="/user" element={<h1>User Page</h1>} />
-           <Route path="/about" element={<h1>About Page</h1>} />
-           <Route path="/contact" element={<h1>Contact Page</h1>} />
+           <Route path="/" element={<Home />} />
+           <Route path="/user" element={<User />} />
+           <Route path="/about" element={<About />} />
+           <Route path="/contact" element={<Contact />} />
+            <Route path="/order" element={<Order />} />
       </Routes>
     </div>
   )
