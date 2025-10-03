@@ -4,6 +4,7 @@ import About from "./Components/About/About";
 import  Navbar  from "./Components/Navbar";
 import User from "./Components/User/User";
 import Contact from "./Components/Contact/Contact";
+import Main from "./Components/Class";
 const App = () => {
   return (
     <div> 
@@ -13,7 +14,9 @@ const App = () => {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/user" element={<User />}></Route>
       </Routes>
+      <Main />
     </div>
   )
 }

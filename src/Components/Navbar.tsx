@@ -4,7 +4,7 @@ const Navbar =()=>{
      <nav className="bg-blue-500 p-4 text-white">
          <ul className="flex space-x-4">
                 <li><Link to="/">Home</Link></li>
-                <li><Link to="/user">user</Link></li>
+                <li><Link to="/user">User</Link></li>
                 <li><Link to="/about">About</Link></li>
                 <li><Link to='/contact'>Contact</Link></li>
          </ul>
