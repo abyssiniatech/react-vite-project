@@ -1,3 +1,4 @@
+
 import { Route, Routes } from "react-router-dom"
 import Navbar from "./Components/Navbar"
 import User from "./Components/User/User"
@@ -6,6 +7,9 @@ import About from "./Components/About/About"
 import Contact from "./Components/Contact/Contact"
 import Order from "./Components/Order/OrderSummary"
 import Notfound from "./Components/Notfound"
+import Products from "./Components/Product/Product"
+import Feature_products from "./Components/Product/Feature_products"
+import New_products from "./Components/Product/New_products"
 const App = () => {
   return (
     <div>
@@ -20,6 +24,11 @@ const App = () => {
            <Route path="/contact" element={<Contact />} />
             <Route path="/order" element={<Order />} />
             <Route path="*" element={<Notfound />} />
+            <Route path="/products" element={<Products />} >
+                <Route path="feature" element={<Feature_products />} />
+                <Route path="new" element={<New_products />} />
+               
+            </Route>
       </Routes>
     </div>
   )
