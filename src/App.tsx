@@ -10,6 +10,9 @@ import Notfound from "./Components/Notfound"
 import Products from "./Components/Product/Product"
 import Feature_products from "./Components/Product/Feature_products"
 import New_products from "./Components/Product/New_products"
+import Students from "./Components/Students"
+import StudentFamily from "./Components/StudentFamily"
+import StudentInfo from "./Components/StudentInfo"
 const App = () => {
   return (
     <div>
@@ -28,6 +31,10 @@ const App = () => {
                 <Route path="feature" element={<Feature_products />} />
                 <Route path="new" element={<New_products />} />
                
+            </Route>
+            <Route path="/students" element={<Students />} >
+              <Route path="info" element={<StudentInfo />} />
+              <Route path="family" element={<StudentFamily />} />
             </Route>
       </Routes>
     </div>
