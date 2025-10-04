@@ -1,10 +1,11 @@
-
+import { useParams } from "react-router-dom"
 const StudentInfo = () => {
+const params=  useParams<{ id: string }>()
+const studentId=params.id
   return (
     <div>
             <h1> student list page</h1>
-            <p>there are 200 students in our schools so please it is the best</p>
-            <p>Atse naod is a great student</p>
+            <p>Student ID: {studentId}</p>
     </div>
   )
 }
